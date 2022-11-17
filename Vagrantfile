@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
-    config.vm.box = "generic/ubuntu1804"
+    config.vm.box = "generic/alpine35"
 
-    config.vm.define 'ubuntu'
+    config.vm.define 'alpine'
 
     # Prevent SharedFoldersEnableSymlinksCreate errors
     config.vm.synced_folder ".", "/vagrant", disabled: true
